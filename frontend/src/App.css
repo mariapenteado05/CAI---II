@@ -1,0 +1,69 @@
+.app {
+  font-family: sans-serif;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.dog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.dog-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+
+.dog-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.dog-card img,
+.dog-detail img {
+  width: 100%;
+  height: 200px;           
+  object-fit: cover;        
+  border-radius: 10px;
+}
+
+.dog-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .dog-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.header-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+}
